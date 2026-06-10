@@ -160,8 +160,9 @@
   <div class="eyebrow">Chapter 2</div>
   <h1>The filling order</h1>
   <p class="lecture-desc">
-    Orbitals are seats; three rules fill them. The seats shift with the
-    nucleus, and that shift makes the transition row.
+    Orbitals are seats and electrons are the audience. Three rules say who
+    sits where, but the seats themselves shift as the nucleus gets heavier.
+    That shift is what makes the transition row weird.
   </p>
   <div class="tags">
     <span class="tag">Pauli</span>
@@ -179,16 +180,22 @@
 <article>
 
 <p class="lecture-roadmap">
-  Chapter 1 built the seats; now fill them. Watch energies shift with $Z$
-  and see why 4s fills before 3d in potassium yet leaves first in iron.
+  Chapter 1 built the seats. Here you fill them. You will play the seating
+  game by hand, then watch the seat heights change as $Z$ grows, and see
+  why 4s fills before 3d in potassium yet leaves first when iron rusts.
 </p>
 
 <h2 id="pauli"><span class="section-number">2.1</span> Two electrons per orbital</h2>
 
 <p>
-  Electrons carry <strong>spin</strong>, $\uparrow$ or $\downarrow$ (not
-  literal rotation). <strong>Pauli</strong>: no two share a quantum state.
-  An orbital fixes $(n, \ell, m)$; it holds two only with opposite spin:
+  Every electron carries a built-in property called <strong>spin</strong>.
+  Spin is not a literal rotation; it is a quantum number that takes exactly
+  two values, written $\uparrow$ and $\downarrow$. The
+  <strong>Pauli exclusion principle</strong> says no two electrons in one
+  atom can share the exact same quantum state. An orbital already fixes
+  the quantum numbers $(n, \ell, m)$, so spin is the only freedom left.
+  Two electrons can share an orbital only if one is $\uparrow$ and the
+  other is $\downarrow$.
 </p>
 
 <div class="spin-pair">
@@ -198,15 +205,28 @@
 </div>
 
 <p>
-  Counts: s=2, p=6, d=10, f=14 — the block widths of the periodic table.
+  That gives a hard cap of two electrons per orbital. Counting orbitals per
+  subshell gives the seat totals: one s orbital holds 2 electrons, three p
+  orbitals hold 6, five d hold 10, seven f hold 14. Those numbers are the
+  widths of the blocks in the periodic table.
 </p>
 
 <h2 id="shielding"><span class="section-number">2.2</span> Shielding breaks the tie</h2>
 
 <p>
-  In hydrogen, energy depends only on $n$: 2s and 2p are <em>degenerate</em>.
-  Add electrons and that breaks. Inner electrons screen the nucleus; the
-  outer one feels an <strong>effective charge</strong>:
+  In a hydrogen atom (one proton, one electron) the energy of an orbital
+  depends only on the shell number $n$. The 2s and 2p subshells have the exact same
+  energy. When two states share an energy like that, physicists call them
+  <em>degenerate</em>.
+</p>
+
+<p>
+  Add more electrons and that degeneracy breaks. An outer electron in a
+  multi-electron atom does not feel the full pull of the nucleus, because
+  the inner electrons sit between it and the nucleus and cancel part of
+  that pull. The cancellation is called <strong>shielding</strong>, and
+  what the outer electron actually feels is a reduced, <strong>effective</strong>
+  nuclear charge:
 </p>
 
 <p style="text-align:center;">
@@ -214,38 +234,53 @@
 </p>
 
 <p>
-  Penetration decides the rest: s dips deepest and feels nearly full
-  nucleus; p less; d barely. $Z_\mathrm{eff}$ differs by subshell:
+  Here $Z$ is the proton count and $S$ is how much of that pull the inner
+  electrons block. Now chapter 1's <strong>penetration</strong> idea pays
+  off: orbitals with more probability close to the nucleus slip past the
+  inner cloud and feel more of the bare charge. An s orbital dips deepest
+  and feels nearly the full nuclear pull; a p orbital dips less; a d
+  orbital barely penetrates at all and sits mostly outside the screen. So
+  $Z_\mathrm{eff}$ is bigger for s than p than d, and a bigger
+  $Z_\mathrm{eff}$ means a more tightly bound, lower-energy electron.
 </p>
 
 <div class="callout insight">
   <div class="callout-label">Within one shell</div>
-  <p>$E_{ns} < E_{np} < E_{nd} < E_{nf}$. More penetration, lower energy.</p>
+  <p>$E_{ns} < E_{np} < E_{nd} < E_{nf}$. The more an orbital penetrates,
+     the more nucleus it feels, and the lower its energy.</p>
 </div>
 
 <div class="interactive wide">
   <div class="interactive-label">Diagram</div>
   <h4 class="interactive-title">Why s sees more nucleus than d</h4>
-  <p class="interactive-hint">s pokes inside the core and feels bare nucleus; d stays outside, screened.</p>
+  <p class="interactive-hint">An outer s electron pokes inside the inner-electron cloud and feels the bare nucleus. A d electron stays outside and feels a screened, weaker pull.</p>
   <div class="interactive-stage" id="shielding-stage"></div>
   <div class="interactive-readout" id="shielding-readout"></div>
 </div>
 
 <h2 id="rules"><span class="section-number">2.3</span> The seating rules</h2>
 
-<p>Three rules decide the ground state:</p>
+<p>
+  Three rules, taken together, decide where every electron in a ground-state
+  atom ends up.
+</p>
 
 <ul>
-  <li><strong>Aufbau</strong>: each electron takes the lowest open seat.</li>
-  <li><strong>Pauli</strong>: two per orbital, opposite spins.</li>
-  <li><strong>Hund</strong>: across equal orbitals, spread before pairing —
-      pairing costs energy.</li>
+  <li><strong>Aufbau</strong> (German for "building up"): each new electron
+      takes the lowest-energy seat that is still open.</li>
+  <li><strong>Pauli</strong>: at most two electrons per orbital, and those
+      two must have opposite spins.</li>
+  <li><strong>Hund</strong>: when a subshell has several orbitals at the
+      same energy (the three p orbitals, the five d orbitals), electrons
+      spread out into separate orbitals before doubling up. Pairing two
+      electrons in one orbital costs energy because they repel each other,
+      so unpaired same-spin arrangements come first.</li>
 </ul>
 
 <div class="interactive wide">
   <div class="interactive-label">Interactive</div>
   <h4 class="interactive-title">Build an atom, one electron at a time</h4>
-  <p class="interactive-hint">Pick a target; click an orbital to drop the next electron. Misplace it and the rules flag why.</p>
+  <p class="interactive-hint">Pick a target element, then click an orbital to drop in the next electron. Misplace one and the rules will say which one you broke.</p>
   <div class="interactive-stage" id="filling-stage"></div>
   <div class="interactive-controls">
     <div class="filling-target">
@@ -266,23 +301,31 @@
 <h2 id="curves"><span class="section-number">2.4</span> The rungs move</h2>
 
 <p>
-  The ladder is not fixed. Subshell energies shift with $Z$ at different
-  rates: 4s gently, 3d fast once it fills. The curves cross between K and Sc.
+  The energy ladder you just used looks fixed, but it is not. Each subshell
+  has its own energy, and that energy depends on $Z$: the more protons the
+  nucleus has, the harder it pulls every electron in. Different subshells
+  respond to that pull at different rates. The 4s curve dips gently as $Z$
+  grows; the 3d curve dips much faster, especially once 3d starts to fill.
+  Somewhere between potassium ($Z=19$) and scandium ($Z=21$), the two
+  curves cross.
 </p>
 
 <div class="callout note">
   <div class="callout-label">About the model</div>
   <p>
-    Energies use <strong>Slater's rules</strong> (1930), an empirical
-    $Z_\mathrm{eff}$ approximation. Real atoms need Hartree–Fock; Slater
-    catches the crossings on one page.
+    The energies below come from <strong>Slater's rules</strong>, an
+    empirical recipe for $Z_\mathrm{eff}$ that John Slater published in
+    1930. Real atoms need numerical Hartree–Fock to get the energies
+    exactly right, but Slater's rules catch the crossings and trends
+    honestly on one page of arithmetic. Treat the chart as a faithful
+    model of a real effect, not the last word.
   </p>
 </div>
 
 <div class="interactive wide">
   <div class="interactive-label">Marquee</div>
   <h4 class="interactive-title">Subshell energy vs atomic number</h4>
-  <p class="interactive-hint">Drag the slider. 4s and 3d cross between Ca and Sc; the filling order flips.</p>
+  <p class="interactive-hint">Drag the slider to change $Z$. Watch the 4s and 3d lines: they cross between Ca and Sc, and the filling order flips at the crossing.</p>
   <div class="interactive-stage" id="curves-stage"></div>
   <div class="interactive-controls">
     <div class="control-group">
@@ -300,28 +343,39 @@
 <div class="callout insight">
   <div class="callout-label">Key insight</div>
   <p>
-    Aufbau is not a list. Each electron takes the lowest seat <em>when it
-    arrives</em>. At $Z=19$ that's 4s; by $Z=21$ it's 3d.
+    The aufbau order is not a list to memorize. Each electron takes the
+    cheapest open seat <em>at the moment it arrives</em>, and the seats
+    themselves move as $Z$ grows. At $Z=19$ the cheapest open seat is 4s,
+    so potassium's last electron lands there. By $Z=21$ the cheapest open
+    seat is 3d. Same rule, different answer.
   </p>
 </div>
 
 <h2 id="ions"><span class="section-number">2.5</span> Last in, first out &mdash; except</h2>
 
 <p>
-  Fe → Fe<sup>2+</sup> loses both 4s electrons before touching 3d — yet 4s
-  filled <em>first</em>. Why leave first too?
+  Here is a fact that confuses chemistry students every year. When iron
+  forms the Fe<sup>2+</sup> ion, the two electrons it loses come from 4s,
+  not from 3d. <strong>Ionization</strong> means pulling electrons off an
+  atom, and an atom gives up its highest-energy electrons first because
+  those are the easiest to take. But we just said 4s fills <em>before</em>
+  3d — filled first, yet emptied first. The chart resolves the
+  contradiction.
 </p>
 
 <p>
-  By iron ($Z=26$), 3d has plunged below 4s. The 4s pair are now the highest
-  electrons, and ionization takes the highest. Cheap to fill, expensive to
-  keep.
+  Look back at the chart from 2.4 near iron ($Z=26$). The 3d curve has
+  plunged so far by then that 3d sits well below 4s; the 3d electrons are
+  now core-like, locked in tight. The 4s pair are the highest-energy
+  electrons in neutral iron, so they are the ones ionization peels off
+  first. 4s was the cheapest seat available when iron was filling, and
+  the most expensive electron to hold onto once iron was full.
 </p>
 
 <div class="interactive wide">
   <div class="interactive-label">Interactive</div>
   <h4 class="interactive-title">Ionize a transition metal</h4>
-  <p class="interactive-hint">Pick an atom; remove 2 electrons; watch which seat empties.</p>
+  <p class="interactive-hint">Pick a neutral atom, then remove two electrons and watch which seat empties first.</p>
   <div class="interactive-stage" id="ion-stage"></div>
   <div class="interactive-controls">
     <div class="ion-pick" id="ion-pick">
@@ -337,7 +391,7 @@
 
 <h2 id="exceptions"><span class="section-number">2.6</span> The exceptions prove the rule</h2>
 
-<p>Two transition-row elements break the chart:</p>
+<p>Two elements in the first transition row refuse to follow the seating game:</p>
 
 <ul>
   <li>Chromium ($Z=24$): not [Ar] 3d<sup>4</sup> 4s<sup>2</sup>, but
@@ -347,35 +401,49 @@
 </ul>
 
 <p>
-  Near $Z=24$ and $Z=29$, 4s and 3d sit very close. A <strong>half-filled</strong>
-  or <strong>full</strong> d lowers repulsion (electrons in different
-  orbitals avoid each other). Promoting one 4s to 3d gives Cr a half d, Cu
-  a full d. Repulsion saved beats the climb.
+  Near $Z=24$ and $Z=29$, the 4s and 3d energies sit nearly equal, so a
+  small effect can break the tie. That small effect is electron repulsion:
+  electrons in separate orbitals stay farther apart than electrons paired
+  in the same orbital, which lowers the atom's total energy. A
+  <strong>half-filled</strong> d subshell (five electrons, one in each d
+  orbital, all same spin) and a <strong>completely filled</strong> d
+  subshell (ten electrons) are both especially good at this. Promoting
+  one electron from 4s up to 3d costs a little energy but gives chromium
+  a half-filled d and copper a full d, and the repulsion saved beats the
+  climb paid for.
 </p>
 
 <div class="callout model">
   <div class="callout-label">The real rule</div>
   <p>
-    Atoms minimize <em>total</em> energy. Aufbau holds when gaps are large;
-    when gaps shrink, repulsion gets a vote. The law is energy minimization,
-    not the chart.
+    Atoms minimize their <em>total</em> energy, not their energy one orbital
+    at a time. The aufbau game from 2.3 is the right answer when the gap
+    between subshells is large. When the gap shrinks, electron repulsion
+    gets a vote, and once in a while that vote flips the result. The
+    exceptions confirm that the underlying law is total-energy minimization.
+    The seating chart is just its usual answer.
   </p>
 </div>
 
 <h2 id="recap"><span class="section-number">2.7</span> What you now have</h2>
 
 <ul>
-  <li>Pauli: two electrons per orbital, opposite spins.</li>
-  <li>Shielding + penetration: $E_{ns} < E_{np} < E_{nd}$ within a shell.</li>
-  <li>Aufbau + Hund + Pauli give ground-state configurations.</li>
-  <li>4s/3d crossing: 4s fills first, ionizes first.</li>
-  <li>Cr and Cu deviate: total energy wins.</li>
+  <li>Pauli caps every orbital at two electrons of opposite spin.</li>
+  <li>Shielding plus penetration breaks the hydrogen-only degeneracy:
+      within a shell, $E_{ns} < E_{np} < E_{nd}$.</li>
+  <li>Aufbau, Hund, and Pauli together predict the ground-state
+      configuration of every atom you tried.</li>
+  <li>Subshell energies move with $Z$. The 4s/3d crossing between Ca and
+      Sc is why 4s fills first <em>and</em> why transition metals ionize
+      from 4s.</li>
+  <li>Cr and Cu deviate from the chart because the real law is total-energy
+      minimization, not the chart itself.</li>
 </ul>
 
 <div class="boss-panel">
   <div class="interactive-label">Boss level</div>
   <h4 class="interactive-title">Build the atom</h4>
-  <p class="interactive-hint">Five elements, four configs each. Pick the ground state. Cr and Cu come last.</p>
+  <p class="interactive-hint">Five elements, four candidate configurations each. Pick the ground state. Cr and Cu come last; the chart will not save you.</p>
   <div class="interactive-stage" id="boss-stage"></div>
   <div class="quiz-options" id="boss-options"></div>
   <div class="interactive-readout" id="boss-readout"></div>

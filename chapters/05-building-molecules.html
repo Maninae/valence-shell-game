@@ -325,8 +325,9 @@
   <div class="eyebrow">Chapter 5</div>
   <h1>Building molecules</h1>
   <p class="lecture-desc">
-    Valence electrons on paper. Dots become notation, notation becomes a
-    builder for real molecules: water, ammonia, methane, the air.
+    Valence electrons get a piece of paper. The dots become a notation, the
+    notation becomes a builder, and the builder lets you assemble real
+    molecules: water, ammonia, methane, the air you breathe.
   </p>
   <div class="tags">
     <span class="tag">Lewis structures</span>
@@ -343,22 +344,28 @@
 <article>
 
 <p class="lecture-roadmap">
-  Chapter 3 named which electrons matter; chapter 4, what they do. Now
-  the bookkeeping: a notation, then a builder.
+  Chapter 3 named which electrons matter: the outermost ones. Chapter 4
+  showed what they do: share or tug. This chapter turns those electrons
+  into a notation you can write on paper, and then into a builder you
+  can use to assemble real molecules.
 </p>
 
 <h2 id="dots"><span class="section-number">5.1</span> Dots for the outermost</h2>
 
 <p>
-  Chemistry runs on valence electrons: the outer $s$ and $p$. Everything
-  deeper is buried. Gilbert Lewis, 1916: write the symbol, draw one dot
-  per valence electron, singly first, then pair.
+  The electrons that actually do chemistry are the valence electrons: the
+  ones in the outermost $s$ and $p$ subshells. Everything deeper is buried
+  too close to the nucleus to participate in bonding. In 1916, Gilbert
+  Lewis proposed a notation as compact as the idea itself: write the
+  element's symbol, and then draw one dot around it for each valence
+  electron. Place a single dot on each of the four sides first, then start
+  doubling up. That's all there is to it.
 </p>
 
 <div class="interactive">
   <div class="interactive-label">Interactive</div>
   <h4 class="interactive-title">Lewis dot symbols</h4>
-  <p class="interactive-hint">Click any main-group element. Dots fill the sides singly, then pair: Hund, in ink.</p>
+  <p class="interactive-hint">Click any main-group element. Dots fill the four sides one at a time, then pair up - the same rule the orbitals followed back in chapter 2.</p>
   <div class="interactive-stage" id="lewis-strip-stage">
     <div class="lewis-strip" id="lewis-strip"></div>
     <svg id="lewis-symbol" viewBox="0 0 240 200" width="240" height="200" aria-hidden="true" style="display:block;margin:8px auto 0;"></svg>
@@ -367,35 +374,49 @@
 </div>
 
 <p>
-  Columns are valence counts: alkali metals one, halogens seven. Group
-  number, drawn.
+  Notice that each column of the periodic table gives the same number of
+  dots: every alkali metal has one, every halogen has seven. That isn't a
+  coincidence. Lewis's notation is just the periodic table's group number,
+  drawn around the symbol.
 </p>
 
 <h2 id="octet"><span class="section-number">5.2</span> Eight is full</h2>
 
 <p>
-  Outer layer = one $s$ + one $p$: $1 + 3 = 4$ orbitals at two electrons
-  each, so $4 \times 2 = 8$. That is "full," and why the nobles sit on
-  the right edge.
+  The magic number eight is not arbitrary. The outer layer of any shell is
+  made of exactly one $s$ subshell and one $p$ subshell. The $s$ holds one orbital and the $p$ holds three,
+  so the outer layer has $1 + 3 = 4$ orbitals total. Pauli says each
+  orbital can hold at most two electrons, which gives $4 \times 2 = 8$.
+  Eight is the largest number of valence electrons a shell can fit, and
+  filling all eight is the noble-gas state you met in chapter 3 - the
+  reason the noble gases sit at the right edge of each row.
 </p>
 
 <p>
-  It's the lowest energy available, so atoms share or transfer until
-  each <em>counts</em> eight. Hydrogen: shell 1 is just $1s$, full is
-  two. A <strong>duet</strong>.
+  Every atom is pulled toward that full-shell state for the same reason
+  electrons do anything else: it's the lowest energy available. So atoms
+  share or transfer electrons with their neighbors until each one can
+  <em>count</em> eight in its outer shell. Hydrogen is the one exception.
+  Its only shell is shell 1, which has just the $1s$ orbital, so its full
+  shell holds only two electrons. Hydrogen's target is a
+  <strong>duet</strong>, not an octet.
 </p>
 
 <div class="callout definition">
   <div class="callout-label">The octet rule</div>
   <p>
-    Main-group atoms bond so each counts a full outer shell: eight, or
-    two for hydrogen.
+    Main-group atoms bond so that each one ends up with enough electrons
+    around it to count a full outer shell: eight for everything past
+    hydrogen, two for hydrogen itself.
   </p>
 </div>
 
 <p>
-  The trick: a shared pair counts for <em>both</em> atoms. A covalent
-  bond, on paper.
+  Here is the move that makes the whole thing work. When two atoms share a
+  pair of electrons, both atoms get to count that pair as part of their
+  own outer shell. Neither atom owns the pair outright, but each one
+  includes those two electrons in its own total. That double-counting is
+  what a covalent bond is, on paper.
 </p>
 
 <div class="octet-diagrams" id="octet-diagrams"></div>
@@ -403,23 +424,37 @@
 <h2 id="lines"><span class="section-number">5.3</span> Lines are pairs</h2>
 
 <p>
-  <strong>One line = one shared pair = one bond.</strong> Pairs on one
-  atom are <strong>lone pairs</strong>: two dots.
+  Drawing two dots between every pair of bonded atoms gets tedious fast,
+  so chemists replaced the shared dots with a single line. The rule is
+  simple: <strong>one line means one shared pair, which means one
+  bond.</strong> Pairs that stay on a single atom instead of being shared
+  are still drawn as two dots side by side, and those are called
+  <strong>lone pairs</strong>.
 </p>
 
 <p>
-  Recipe: count valence electrons; least-electronegative atom centers
-  (never H); draw singles; spread leftovers as lone pairs, outer atoms
-  first; if any atom is short of eight, slide a lone pair into a gap for
-  a double or triple.
+  The recipe runs the same way every time. First, add up the valence
+  electrons each atom brings - that's the total you have to work with.
+  Second, put the least-electronegative atom in the center, since the
+  center holds the most bonds; hydrogen is never central, because its
+  full shell is only two and it can manage just one bond. Third, draw a
+  single bond from the center to each outer atom. Fourth, place any
+  leftover electrons as lone pairs, filling the outer atoms first and
+  then the center. Fifth, if any atom still falls short of eight, slide
+  one of its neighbor's lone pairs into the gap between them to make a
+  double or triple bond.
 </p>
 
 <div class="callout example">
   <div class="callout-label">Worked example: water (H&#8322;O)</div>
   <p>
-    Oxygen 6, each H 1. Total 8. Oxygen centers. Two O&ndash;H bonds use
-    4; the other 4 are two lone pairs. Each H counts 2; oxygen counts
-    $2 + 2 + 2 + 2 = 8$.
+    Oxygen brings 6 valence electrons; each hydrogen brings 1; the total
+    is 8. Oxygen sits in the center, since hydrogen is never central. Two
+    O&ndash;H single bonds use 4 of the 8 electrons, and the remaining 4
+    go on oxygen as two lone pairs. Now check every atom. Each hydrogen
+    counts 2 electrons in its bond and is happy with its duet. Oxygen
+    counts 2 from each of its two bonds and 2 from each of its two lone
+    pairs, which adds up to $2 + 2 + 2 + 2 = 8$. Done.
   </p>
   <svg class="worked-svg" id="example-h2o" viewBox="0 0 360 200" aria-hidden="true"></svg>
 </div>
@@ -427,9 +462,12 @@
 <div class="callout example">
   <div class="callout-label">Worked example: ammonia (NH&#8323;)</div>
   <p>
-    Nitrogen 5, each H 1. Total 8. Nitrogen centers. Three N&ndash;H
-    bonds use 6; the last 2 are one lone pair. Each H counts 2; nitrogen
-    counts $2 + 2 + 2 + 2 = 8$.
+    Nitrogen brings 5 valence electrons; each hydrogen brings 1; the
+    total is 8. Nitrogen sits in the center. Three N&ndash;H single bonds
+    use 6 electrons, and the remaining 2 become a single lone pair on
+    nitrogen. Each hydrogen counts 2 from its bond. Nitrogen counts 2
+    from each of its three bonds plus 2 from its lone pair, which adds up
+    to $2 + 2 + 2 + 2 = 8$. Done.
   </p>
   <svg class="worked-svg" id="example-nh3" viewBox="0 0 360 200" aria-hidden="true"></svg>
 </div>
@@ -437,19 +475,24 @@
 <h2 id="builder"><span class="section-number">5.4</span> The builder</h2>
 
 <p>
-  Atoms are pre-placed. Click a gap to cycle bond order
-  ($0 \to 1 \to 2 \to 3 \to 0$); click an atom to add a lone pair
-  ($0, 1, 2, 3, 4$, wraps). Atoms glow
-  <span style="color: var(--green); font-weight: 600;">green</span> at
-  target (8, or 2 for H),
-  <span style="color: var(--rose); font-weight: 600;">rose</span> on
-  overshoot. Use every electron; satisfy every atom.
+  Now you do it. The atoms are already placed in a sensible skeleton, and
+  your job is to decide the bonds and the lone pairs. Click in the gap
+  between two atoms to cycle the bond order through
+  $0 \to 1 \to 2 \to 3 \to 0$; click directly on an atom to add a lone
+  pair, which cycles through $0, 1, 2, 3, 4$ pairs and then wraps. Each
+  atom glows
+  <span style="color: var(--green); font-weight: 600;">green</span> when
+  its count reaches its target (8 for everything past hydrogen, 2 for
+  hydrogen) and
+  <span style="color: var(--rose); font-weight: 600;">rose</span> if you
+  overshoot. The molecule is done when every electron is placed and every
+  atom is satisfied.
 </p>
 
 <div class="interactive wide">
   <div class="interactive-label">Interactive</div>
   <h4 class="interactive-title">Lewis structure builder</h4>
-  <p class="interactive-hint">Click a gap to cycle a bond. Click an atom to drop a lone pair.</p>
+  <p class="interactive-hint">Click in a gap between atoms to cycle a bond. Click an atom to drop a lone pair on it.</p>
   <div class="builder-stage">
     <div class="builder-canvas-wrap">
       <svg id="builder-svg" viewBox="0 0 600 380" aria-label="Lewis structure builder"></svg>
@@ -484,84 +527,113 @@
 <div class="callout insight">
   <div class="callout-label">Why it works</div>
   <p>
-    Each click moves electrons between two accounts: shared or lone. The
-    win condition is the octet rule on every atom. That every molecule
-    has a valid answer is why the notation exists.
+    Each click is just moving electrons between two accounts: shared
+    between two atoms, or kept as a lone pair on one atom. The win
+    condition is the octet rule applied to every atom at the same time.
+    The reason this notation exists at all is that every real molecule has
+    a valid answer you can reach by this kind of bookkeeping.
   </p>
 </div>
 
 <h2 id="multiple"><span class="section-number">5.5</span> Double and triple are shorter and stronger</h2>
 
 <p>
-  CO&#8322;, O&#8322;, and N&#8322; force doubles and triples: same bond,
-  more pairs per gap. More glue: nuclei closer, harder to break.
-  Carbon&ndash;carbon, in numbers:
+  Some molecules, like CO&#8322;, O&#8322;, and N&#8322;, force you to
+  draw double or triple bonds because there aren't enough electrons to go
+  around otherwise. A double bond isn't a different kind of bond; it's
+  just two shared pairs sitting in the same gap between two atoms instead
+  of one. A triple bond is three pairs. More shared pairs in the gap
+  means more negative charge holding the two positive nuclei together,
+  which lets the nuclei sit closer without their mutual repulsion winning
+  out, and it takes more energy to pull them apart again. Both effects
+  show up clearly in the numbers for carbon&ndash;carbon bonds:
 </p>
 
 <svg class="bond-compare" id="bond-compare" viewBox="0 0 720 260" aria-hidden="true"></svg>
 
 <p>
-  Triple bonds are why $\text{N}_2$ is inert: splitting it costs
-  <strong>945 kJ/mol</strong>, nearly three O&ndash;H bonds. Four-fifths
-  of the air is N&#8322;, and almost none reacts at room temperature.
-  The atmosphere is held by a triple bond.
+  Triple bonds are the reason nitrogen gas, $\text{N}_2$, is famously
+  inert. Pulling two nitrogen atoms apart costs
+  <strong>945 kJ/mol</strong>, which is nearly three times the energy of
+  a single O&ndash;H bond. About four-fifths of the air around you is
+  N&#8322;, and almost none of it reacts with anything at room
+  temperature. The entire atmosphere is held in place by a triple bond.
 </p>
 
 <h2 id="limits"><span class="section-number">5.6</span> What the dots can't say</h2>
 
 <p>
-  Lewis is flat bookkeeping: <em>which</em> atoms bond and <em>how many</em>
-  pairs sit where. It doesn't say methane's four C&ndash;H bonds aim at
-  tetrahedron corners, that water bends at about 105&deg;, or that water
-  sticks to itself through hydrogen bonds: why ice floats, DNA holds
-  shape, blood is liquid at body temperature.
+  Lewis structures are flat bookkeeping. They get <em>which</em> atoms are
+  bonded and <em>how many</em> pairs sit where, and they get those things
+  exactly right. But they are silent about everything else. They don't
+  tell you that the four C&ndash;H bonds in methane aim outward to the
+  corners of a tetrahedron rather than lying flat in a square. They don't
+  tell you that water bends at an angle of about 105 degrees instead of
+  sitting in a straight line, or that water molecules stick to each other
+  through small extra attractions called hydrogen bonds - the attractions
+  that make ice float, hold DNA in shape, and keep your blood liquid at
+  body temperature.
 </p>
 
 <p>
-  Geometry and stickiness are behind the door the notation opened. The
-  next site picks up there.
+  Geometry and stickiness live behind the door this notation just opened
+  for you. This course stops here, and the next one picks up there.
 </p>
 
 <div class="callout note">
   <div class="callout-label">Coming in v2</div>
   <p>
-    VSEPR turns dots into 3D: each pair is a balloon shoving the others
-    away. Polarity plus geometry sets net dipole, which sets what
-    dissolves in water, which sets most of biology. Hydrogen bonding next.
+    VSEPR turns the flat dots into 3D shapes by treating each pair of
+    electrons as a balloon that pushes the others away. Combine that
+    geometry with the polarity you met in chapter 4, and you get a
+    molecule's net dipole, which decides whether it dissolves in water,
+    which decides most of biology. Hydrogen bonding comes next after that.
   </p>
 </div>
 
 <h2 id="recap"><span class="section-number">5.7</span> What you now have</h2>
 
 <ul>
-  <li>Lewis dot symbols: valence count around the symbol, singly before
-      pairing (Hund, in ink).</li>
-  <li>Octet (duet for H): one $s$ + three $p$, capped by Pauli, give an
-      outer shell of eight: the noble-gas state.</li>
-  <li>A bond is a shared pair both atoms count. Two pairs is double,
-      three is triple: shorter and stronger each step.</li>
-  <li>Build Lewis structures from the rules: count valence, lay singles,
-      spread lone pairs, promote where atoms fall short.</li>
+  <li>Lewis dot symbols: the valence count drawn around the element's
+      symbol, dots placed singly before they pair (Hund's rule, in ink).</li>
+  <li>The octet (or duet for hydrogen): one $s$ orbital plus three $p$
+      orbitals in the outer layer, capped at two electrons each by Pauli,
+      add up to a full shell of eight - the noble-gas state every atom
+      slides toward.</li>
+  <li>A bond is a shared pair both atoms count in their own shells. Two
+      pairs in the same gap make a double bond, three make a triple, and
+      each step pulls the nuclei closer and makes the bond harder to
+      break.</li>
+  <li>The Lewis structure of any small molecule is recoverable from
+      rules alone: count valence, lay down single bonds, spread the
+      leftovers as lone pairs, promote bonds wherever atoms fall short.</li>
 </ul>
 
 <p>
-  Five chapters back: where does an electron live. Answer: a probability
-  cloud, three quantum numbers. Then Pauli and Hund seated them,
-  shielding ordered them, the seating chart became the table, valence
-  explained the columns, the energy well explained bonding, one continuum
-  collapsed the bond zoo, and valence became a notation.
+  Five chapters ago the question was where an electron lives, and the
+  answer was a probability cloud labeled by three quantum numbers. From
+  there, Pauli and Hund seated the electrons inside each atom, shielding
+  decided what order the seats filled in, the seating chart unfolded into
+  the periodic table, and the outermost seats - the valence electrons -
+  explained why the columns of the table share their chemistry. Then two
+  atoms met, the energy well between them explained why bonding happens at
+  all, a single continuum from covalent to polar to ionic collapsed the
+  old zoo of bond types into one axis, and those same valence electrons
+  became a working notation for assembling molecules.
 </p>
 
 <p>
-  One rule did all of it: <strong>electrons go to the lowest energy
-  available.</strong> Constraints change; the rule doesn't. That is why
-  this is one course, not five.
+  One rule did all of that work, applied honestly at every step:
+  <strong>electrons go to the lowest energy available, given the
+  constraints in front of them.</strong> The constraints kept changing -
+  one nucleus, then many electrons, then many atoms - but the rule never
+  did. That is what made this a single course instead of five.
 </p>
 
 <div class="boss-panel">
   <div class="interactive-label">Boss level</div>
   <h4 class="interactive-title">The Architect</h4>
-  <p class="interactive-hint">Exam mode: no glow, no auto-validate. Build ammonia, carbon dioxide, then N&#8322;, and press check. Three checks per molecule.</p>
+  <p class="interactive-hint">Exam mode: no per-atom glow, no auto-validate. Build ammonia, then carbon dioxide, then N&#8322;, and press check when you think each one is right. You get three checks per molecule.</p>
   <div class="builder-stage">
     <div class="builder-canvas-wrap">
       <svg id="boss-svg" viewBox="0 0 600 380" aria-label="Architect challenge"></svg>

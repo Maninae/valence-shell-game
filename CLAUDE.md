@@ -13,9 +13,19 @@ built from first principles in sequence; never name-drop a term (orbital,
 shielding, electronegativity) before the site has constructed it.
 
 - Treat the reader as intelligent. Real vocabulary, no babying.
-- Keep prose LEAN. Owen had v1 cut by ~30%: no throat-clearing, no
-  scene-setting flourishes, no restating what an interactive already shows,
-  no recap padding. Short declarative sentences. When in doubt, cut.
+- **Narrative AND lean — comprehension always wins.** Owen calibrated this
+  twice: v1 was too padded (cut ~30%), then the cut version was too
+  telegraphic ("Obvious model: a solar system" teaches nothing). The spec:
+  flowing cause-and-effect prose where every "therefore" has its "because"
+  on the page, full sentences with connectors, each concept explained
+  before it's used. An average American 9th grader should follow every
+  paragraph. What stays banned: throat-clearing, restating what an
+  interactive already shows, recap padding, decorative asides. Punchy
+  fragments are payoff lines AFTER an explanation, never the explanation.
+- KaTeX `\htmlData{tip=...}` values must be plain ASCII with NO commas,
+  parentheses, percent signs, or unicode (em-dashes included) — KaTeX
+  parses commas as attribute separators and the whole equation dies to
+  red raw source. Use " - " to set off clauses.
 - **No hook questions** ("Ever wondered why...?") — Owen vetoed these as cheesy.
   Open sections with declarative claims or observations instead.
 - Less prose, more seeing and doing. Interactives are the spine; prose is
