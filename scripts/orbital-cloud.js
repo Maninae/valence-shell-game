@@ -190,7 +190,7 @@ export function createOrbitalCloud(container, opts = {}) {
     size: 1,
     map: makeSpriteTexture(),
     transparent: true,
-    opacity: 0.45,
+    opacity: 0.26,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
     vertexColors: true,
