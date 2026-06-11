@@ -19,7 +19,7 @@ export function initBoss() {
   if (!stage || !optsEl) return;
 
   const cloud = createOrbitalCloud(stage, {
-    n: 3, l: 2, m: 0, points: 50000, autoRotate: true, interactive: true,
+    n: 3, l: 2, m: 0, points: 100000, autoRotate: true, interactive: true,
   });
 
   let round = 0, score = 0, answer = null, locked = false;

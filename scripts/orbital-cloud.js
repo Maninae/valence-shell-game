@@ -162,7 +162,7 @@ export function subshellColor(l) {
 export function createOrbitalCloud(container, opts = {}) {
   const {
     n = 2, l = 1, m = 0,
-    points = 60000,
+    points = 120000,
     autoRotate = true,
     interactive = true,
     showPhase = true,
@@ -190,7 +190,7 @@ export function createOrbitalCloud(container, opts = {}) {
     size: 1,
     map: makeSpriteTexture(),
     transparent: true,
-    opacity: 0.52,
+    opacity: 0.45,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
     vertexColors: true,
@@ -230,7 +230,7 @@ export function createOrbitalCloud(container, opts = {}) {
     camera.position.set(dist * 0.9, dist * 0.45, dist * 0.9);
     camera.lookAt(0, 0, 0);
     controls.target.set(0, 0, 0);
-    material.size = Math.max(0.03, r96 * 0.016);
+    material.size = Math.max(0.025, r96 * 0.014);
   }
 
   function resize() {

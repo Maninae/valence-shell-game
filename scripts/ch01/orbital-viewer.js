@@ -27,7 +27,7 @@ export function initOrbitalViewer() {
   const state = { n: 2, l: 1, m: 0 };
   const cloud = createOrbitalCloud(stage, {
     n: state.n, l: state.l, m: state.m,
-    points: 60000,
+    points: 120000,
     autoRotate: true,
     interactive: true,
   });
