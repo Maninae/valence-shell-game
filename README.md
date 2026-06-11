@@ -1,9 +1,9 @@
-# Valence Shell Game
+# Valence
 
 An interactive course on how electrons arrange themselves inside atoms — and
 why that one fact explains the periodic table, bonding, and most of chemistry.
 
-**Live: [maninae.github.io/valence-shell-game](https://maninae.github.io/valence-shell-game)**
+**Live: [maninae.github.io/valence](https://maninae.github.io/valence)**
 
 Built for a smart STEM high schooler who hasn't taken chemistry. The only
 prerequisites are protons, neutrons, and electrons; everything else is

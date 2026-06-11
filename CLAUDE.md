@@ -1,7 +1,7 @@
-# Valence Shell Game
+# Valence
 
 Interactive site teaching how electrons arrange in atoms and why atoms bond,
-from first principles. Live target: maninae.github.io/valence-shell-game.
+from first principles. Live target: maninae.github.io/valence.
 Sibling to grid-atlas and graph-playground: **vanilla JS, no build step,
 GitHub Pages from main root.** Three.js + KaTeX from CDN only.
 
